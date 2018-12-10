@@ -6,6 +6,10 @@
     flex-direction: column;
   }
 
+  h1 {
+    font-size: 3em;
+  }
+
   main {
     flex: 1 0 auto;
   }
@@ -14,7 +18,7 @@
   	width: 100%;
   }
 
-  .show-img{
+  .show-img {
     padding-right: 5%;
   }
 
@@ -23,6 +27,11 @@
     font-size: 3.4em;
   }
 
-  .show-prezzo{
-    font-size: 2.4em;
+  .show-prezzo {
+    font-size: 2em;
+  }
+
+
+  .btn-form {
+    width: 100%;
   }
