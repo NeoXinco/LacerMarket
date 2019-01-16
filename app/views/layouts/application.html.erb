@@ -1,25 +1,23 @@
 <!DOCTYPE html>
-
-<html>
-  
+<html> 
 <head>
-
     <title>LacerMarket</title>
    	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 	<%= csrf_meta_tags %>
 	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
 </head>
-
 <body>
 
 <%= render "layouts/header" %>
 
-	<p class="notice"><%= notice %></p>
-	<p class="alert"><%= alert %></p>
-
+<div class="containter">
+	<% flash.each do |type, message| %> <!-- <script>  M.toast({html: '<%= message %>'})</script> -->
+	<script>
+		Materialize.toast ('<%= message %>' , 4000)
+	</script>
+	<% end %>
+</div>
 
 <main class="containter">
 	<%= yield %>
@@ -31,7 +29,6 @@
 
 	<script>
 	$(".button-collapse").sideNav();
-
 	</script>
 
 </html>
