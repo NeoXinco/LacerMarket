@@ -14,7 +14,7 @@
 <div class="containter">
 	<% flash.each do |type, message| %> <!-- <script>  M.toast({html: '<%= message %>'})</script> -->
 	<script>
-		Materialize.toast ('<%= message %>' , 4000)
+		M.toast ({html: '<%= message %>' , 4000)}
 	</script>
 	<% end %>
 </div>
