@@ -12,7 +12,7 @@
 <%= render "layouts/header" %>
 
 <div class="containter">
-	<% flash.each do |type, message| %> <!-- <script>  M.toast({html: '<%= message %>'})</script> -->
+	<% flash.each do |type, message| %>
 	<script>
 		M.toast ({html: '<%= message %>' , 4000)}
 	</script>
