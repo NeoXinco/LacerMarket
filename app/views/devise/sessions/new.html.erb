@@ -18,8 +18,8 @@
 
       <% if devise_mapping.rememberable? -%>
         <div class="field">
+          <%= f.check_box :remember_me, :style => "width: 50px; height: 50px;" %>
           <%= f.label :remember_me %>
-          <%= f.check_box :remember_me %>
         </div>
       <% end -%>
 
