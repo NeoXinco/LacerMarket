@@ -18,7 +18,7 @@
 
       <% if devise_mapping.rememberable? -%>
         <div class="field">
-          <%= f.check_box :remember_me, {:checked => "checked"} %>
+          <%= f.check_box :subscribe, checked: @event.new_record? || f.object.subscribe? %>
           <%= f.label :remember_me %>
         </div>
       <% end -%>
