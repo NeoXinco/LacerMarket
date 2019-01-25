@@ -20,7 +20,7 @@ class ContentsController < ApplicationController
   end
 
   def create
-    @content = current_user.contents.build(content_params)
+    @content = current_user.content.build(content_params)
 
     respond_to do |format|
       if @content.save
