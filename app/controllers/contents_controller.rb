@@ -59,7 +59,7 @@ class ContentsController < ApplicationController
     end
 
     def check_user
-      if current_user != @contents.user
+      if current_user != @content.user
         redirect_to root_url, alert: "Scusa ma non hai accesso a questa pagina"
       end
     end
