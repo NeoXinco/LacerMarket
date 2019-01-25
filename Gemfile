@@ -25,7 +25,7 @@ gem 'devise'
 
 gem "paperclip", "~> 6.0.0"
 
-gem 'aws-sdk', '~> 2.3'
+
 
 gem 'will_paginate', '~> 3.1.0'
 
@@ -44,11 +44,13 @@ gem 'mini_racer', platforms: :ruby
 gem 'font-awesome-sass'
 
 
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'sqlite3'
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'aws-sdk' , '~> 2.3'
 end
 
 group :production do
